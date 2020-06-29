@@ -1,10 +1,14 @@
 package com.company;
 
+import com.company.Playground.CorpusGenerator;
+import com.company.Playground.GameOfChecker;
+import com.company.Playground.RestoreIP;
 import com.company.Problems.*;
 import com.company.Utils.ListNode;
 import com.company.Utils.TreeNode;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
@@ -124,6 +128,14 @@ public class Main {
 //        P107 p107 = new P107();
 //        p107.levelOrderBottom(root);
 //        P119.getRow(3);
-        P468.validIPAddress("2001:0db8:85a3:0:0:8A2E:0370:7334:");
+//        P468.validIPAddress("2001:0db8:85a3:0:0:8A2E:0370:7334:");
+//        char[][] board = {{'O', '.', 'O', '.', 'O', '.', 'O'}, {'.', '.', '.', '.', '.', '.', '.'},
+//                {'.', '.', '.', '.', '.', '.', '.'}, {'X', '.', 'X', '.', 'X', '.', 'X'}};
+//        GameOfChecker checker = new GameOfChecker();
+//        List list = checker.nextMove(board, true);
+//        System.out.println(list);
+//        System.out.println(RestoreIP.restoreIpAddresses("25525511135"));
+        CorpusGenerator corpus = new CorpusGenerator("this is a good example, this is not a bad example.", 5);
+        corpus.generate();
     }
 }
