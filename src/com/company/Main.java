@@ -3,6 +3,7 @@ package com.company;
 import com.company.Playground.CorpusGenerator;
 import com.company.Playground.GameOfChecker;
 import com.company.Playground.RestoreIP;
+import com.company.Playground.TicTacToe;
 import com.company.Problems.*;
 import com.company.Utils.ListNode;
 import com.company.Utils.TreeNode;
@@ -135,7 +136,13 @@ public class Main {
 //        List list = checker.nextMove(board, true);
 //        System.out.println(list);
 //        System.out.println(RestoreIP.restoreIpAddresses("25525511135"));
-        CorpusGenerator corpus = new CorpusGenerator("this is a good example, this is not a bad example.", 5);
-        corpus.generate();
+//        CorpusGenerator corpus = new CorpusGenerator("this is a good example, this is not a bad example.", 5);
+//        corpus.generate();
+        TicTacToe ticTacToe = new TicTacToe(3);
+        System.out.println(ticTacToe.move(0, 0, 1));
+        System.out.println(ticTacToe.move(0, 1, 2));
+        System.out.println(ticTacToe.move(1, 1, 1));
+        System.out.println(ticTacToe.move(0, 2, 2));
+        System.out.println(ticTacToe.move(2, 2, 1));
     }
 }
